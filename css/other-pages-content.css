@@ -1,0 +1,804 @@
+/*  - PHẦN CONTENT CỦA TRANG START HERE, ABOUT, BAKING TIPS  - */
+.page-header-banner{
+    padding-bottom: 15px;
+}
+.page-header-banner-background{
+    width: 100%;
+    background-color: #f6f5f5;
+    height: 210px;
+    z-index: -1;
+}
+.page-header-banner-container{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: -180px;
+    background-color: #ffffff;
+}
+.left-column{
+    float: left;
+    width: 36%;
+    padding: 30px 40px;
+    text-align: center;
+}
+.page-title{
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin: 10px auto;
+}
+.header-description{
+    font-size: 16px;
+}
+.right-column{
+    float: right;
+    width: 64%;
+}
+.right-column img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.banner-divider-container{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 15px;
+}
+.banner-divider{
+ width: 100%;
+ height: 2px;
+ background-color: #f0efef;
+}
+.entry-content{
+    margin: 30px 0 50px;
+}
+.entry-content h2{
+    width: 750px;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin: 0 auto 30px;
+}
+.entry-content p{
+    width: 750px;
+    font-size: 16px;
+    text-align: justify;
+    margin: 0 auto 30px;
+}
+.entry-content span{
+    font-style: italic;
+}
+.picture-container{
+    width: 750px;
+    margin: 0 auto 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.entry-content img{
+    width: 48%;
+}
+.header-description a, .entry-content a{
+    color: #0b8e93;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.header-description a:hover, .entry-content a:hover{
+    color: #c3366f;
+}
+/* ------- Các thuộc tính riêng của trang BAKING TIPS ------- */
+.breadcrumbs-container{
+    margin-top: 15px;
+}
+.laber-container{
+    margin-top: 30px;
+}
+.top-boder{
+    height: 2px;
+    background-color: #f6f5f5;
+}
+.section-label{
+    background-color: #f6f5f5;
+    padding: 12px 38px;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+/* Sửa lại 1 số thuộc tính class "recipe-card" của phần Baking tips */
+/* (so với layout.css) */
+.recipes-list-container{
+    overflow: hidden;
+    margin-top: 15px;
+}
+.recipes-list-container .recipe-card{
+    float: left;
+    width: 280px;
+    height: 520px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 9%);
+}
+.recipes-list-container .recipe-card:hover{
+    transform: none;
+}
+/* Phần NAV trang */
+.navigation.pagination{
+    display: block;
+    margin-top: 30px;
+    border: none;
+    text-transform: none;
+}
+.nav-link{
+    display: flex;
+    text-align: center;
+}
+.previous-link, .next-link{
+    width: 25%;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: italic;
+    padding-top: 0.5em;
+}
+.page-number-container{
+    width: 50%;
+}
+.page-numbers{
+    background-color: #fdedf0;
+    width: 41px;
+    height: 41px;
+    border-radius: 100%;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+}
+.page-numbers span{
+    background-color: rgba(0,0,0,0);
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: center;
+    position: relative;
+    margin-top: 0.5em;
+}
+.page-numbers.current, .page-numbers:hover{
+    background-color: #f7b8c3;
+}
+.page-numbers.dot{
+    background-color: transparent;
+}
+
+
+/* -------------- PHẦN CONTENT CỦA TRANG COOKBOOK ----------------- */
+.page-header{
+    background-color: #f6f5f5;
+    padding: 19px 0;
+}
+.page-header-container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.content-center-header{
+    background-color: #f6f5f5;
+    display: flex;
+    justify-content: center;
+}
+h1.page-title{
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+}
+.cookbook-list.container{
+    width: 750px;
+}
+.cookbook-list .entry-content{
+    margin: 30px 0 0;
+}
+.cookbook-list .entry-content p{
+    margin: 0 auto 20px;
+}
+.block-cookbook{
+    overflow: hidden;
+}
+.block-cookbook .cookbook-card{
+    width: 99%;
+    margin: 22px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.block-cookbook .cookbook-card:hover{
+    transform: none;
+}
+.block-cookbook .cookbook-left-column{
+    width: 31%;
+}
+.block-cookbook .cookbook-left-column .cookbook-image{
+    width: 100%;
+    margin: -15px 0 -15px 10px;
+}
+.block-cookbook .cookbook-left-column img{
+    width: auto;
+    max-height: 281px;
+    border: 3px solid #ffffff;
+    margin: 0 auto;
+}
+.block-cookbook .cookbook-right-column{
+    width: 68%;
+}
+.block-cookbook .cookbook-right-column .cookbook-title{
+    margin: 40px 30px 20px 20px;
+}
+.block-cookbook .cookbook-right-column .cookbook-summary{
+    margin: 20px 30px 25px 20px;
+}
+.block-cookbook .cookbook-right-column .buy-now-link{
+    margin: 5px 0 0 20px;
+}
+.block-cookbook .cookbook-right-column a{
+    color: #212121;
+    text-decoration: none;
+}
+.block-cookbook .cookbook-right-column a:hover{
+    color: #c3366f;
+}
+
+/* -------------- PHẦN CONTENT CỦA TRANG RECIPE INDEX --------------- */
+/*Cột bên trái*/
+.gray-background{
+    background-color: #f6f5f5;
+}
+.recipe-filter-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.recipe-filter-left{
+    flex-basis: 15%;
+}
+.filter-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+    border-bottom: 2px solid #f0efef;
+}
+.filter-title{
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+form.filter-form{
+    padding: 15px 15px 11px;
+    background-color: #f6f5f5;
+}
+form.filter-form label{
+    background-color: #f6f5f5;
+    display: flex;
+    margin-bottom: 4px;
+}
+form.filter-form span{
+    background-color: #f6f5f5;
+    padding-left: 6px;
+}
+/*Cột bên phải*/
+.recipe-filter-right{
+    flex-basis: 82%;
+}
+.recipe-filter-right .recipe-card-container{
+    /* Bỏ các thuộc tính cũ của .recipe-card-container */
+    padding: 0;
+    float: none;
+    /* Thêm các thuộc tính mới */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 18px auto;
+}
+.recipe-filter-right .recipe-card-container .recipe-card{
+    /* Bỏ các thuộc tính cũ của .recipe-card */
+    float: none;
+    /* Thêm các thuộc tính mới */
+    flex-basis: 19%;
+    margin: 0 0 20px;
+}
+.recipe-filter-right .recipe-card-container .recipe-card:hover{
+    transform: none;
+}
+.recipe-filter-right .recipe-card-container .recipe-card .recipe-title{
+    margin: 15px 0;
+}
+
+/* ------------------ PHẦN CONTENT CỦA TRANG FAQ -------------------- */
+.faq-list.container{
+    width: 750px;
+}
+.faq-list .entry-content{
+    margin: 30px 0 0;
+}
+.faq-list .entry-content p{
+    margin: 0 auto 20px;
+}
+.faq-header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 10px 20px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.faq-header, .faq-title, .faq-header .accordion-arrow, .faq-header i {
+    background-color: #f7b8c3;
+}
+.faq-content {
+    line-height: 1.25;
+    padding: 0 20px;
+    border-width: 0 1px 1px;
+    border-style: solid;
+    border-color: #f7b8c3;
+    margin-bottom: 20px;
+}
+.faq-list .entry-content .faq-content p{
+    width: auto;
+    display: block;
+    margin: 20px 0;
+}
+.faq-list .entry-content .faq-content ul{
+    font-size: 16px;
+    line-height: 1.25;
+    margin: 20px 20px 20px 40px;
+}
+
+/* ---------- PHẦN CONTENT CỦA TRANG PRIVACY POLICY ------------- */
+.privacy-policy{
+    padding-top: 30px;
+}
+.privacy-policy p{
+    text-align: justify;
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+.privacy-policy ul{
+    list-style: disc;
+    margin: 0 0 30px 70px;
+}
+.privacy-policy li{
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+/* ----------------- PHẦN CONTENT CỦA TRANG VIDEO ---------------- */
+.video-list-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.video-card{
+    flex-basis: 32%;
+    margin: 0 0 20px;
+    box-shadow: 2px 3px 10px rgb(0,0,0,0.09);
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.video-image {
+    flex-basis: 100%;
+    position: relative;
+}
+.video-image a{
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+.video-image img{
+    flex-basis: 100%;
+    width: 100%;
+}
+.play-icon-container{
+    position: absolute;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+}
+.play-icon-container button{
+    width: 38px;
+    height: 38px;
+    border: none;
+    border-radius: 100%;
+    background-color: #fbdbe1;
+}
+.play-icon-container button:hover{
+    cursor: pointer;
+}
+.play-icon-container i{
+    font-size: 20px;
+    background-color: #fbdbe1;
+}
+.video-title{
+    flex-basis: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ---------- PHẦN CONTENT CỦA 1 TRANG RECIPE CỤ THỂ ---------- */
+.the-post-date a{
+    color: #0b8e93;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.the-post-date a:hover {
+    color: #c3366f;
+}
+.single-post-container{
+    display: flex;
+    justify-content: space-between;
+}
+.left-side{
+    flex-basis: 66%;
+}
+.single-post-button-group{
+    display: flex;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.single-post-button-group a{
+    color: #212121;
+    text-decoration: none;
+    padding: 6px 12px 3px;
+}
+.single-post-button-group a:hover{
+    color: #212121;
+    text-decoration: none;
+}
+.jump-to-recipe-button{
+    display: flex;
+    align-items: center;
+    margin: 0 4px 15px;
+    padding: 5px 0;
+    border-radius: 5px;
+}
+.jump-to-recipe-button span{
+    font-style: italic;
+    font-weight: 400;
+    text-transform: lowercase;
+}
+.jump-to-video-button{
+    display: flex;
+    align-items: center;
+    margin: 0 4px 15px;
+    padding: 5px 0;
+    border-radius: 5px;
+}
+.jump-to-video-button span{
+    font-style: italic;
+    font-weight: 400;
+    text-transform: lowercase;
+}
+.single-post-container .left-side p{
+    font-size: 17px;
+    line-height: 1.5;
+    width: 100%;
+}
+.single-post-container .left-side .block-image{
+    margin-bottom: 30px;
+}
+.single-post-container .left-side .block-image img{
+    width: 100%;
+}
+.gray-divider-container{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.stripe-gray{
+    width: 100%;
+    height: 2px;
+    background-color: #eee;
+    margin-bottom: 6px;
+}
+.single-post-container .left-side h2{
+    width: 100%;
+    font-size: 30px;
+    text-align: left;
+}
+.single-post-container .left-side ul{
+    list-style: disc;
+    margin: 0 0 20px 60px;
+}
+.single-post-container .left-side li{
+    font-size: 17px;
+    line-height: 1.5;
+}
+.single-post-container .left-side ol{
+    counter-reset: li; /* Đánh STT cho ol */
+
+    list-style-type: none;
+    margin: 0 0 20px 40px;
+}
+.single-post-container .left-side ol li{
+    padding: 0 0 0 40px;
+    padding-left: 23px!important;
+    position: relative;
+}
+.single-post-container .left-side ol li::before {
+    counter-increment: li; /* Đánh STT cho ol */
+    content: counter(li); /* Đánh STT cho ol */
+
+    background-color: #dddddd;
+    border-radius: 50%;
+    color: #212121;
+    font-size: 14px;
+    height: 20px;
+    width: 20px;
+    font-weight: 600;
+    text-align: center;
+    left: -6px;
+    top: 3px;
+    position: absolute;
+}
+.block-gallery{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.block-gallery img{
+    width: 49%;
+}
+
+.tasty-recipes{
+    background-color: #f9f9f9;
+    border: 1px solid #ece9e9;
+    margin: 6px;
+    padding: 20px;
+}
+.tasty-recipes-entry-header{
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eee;
+}
+.tasty-recipes-image{
+    background-color: #f9f9f9;
+    flex-basis: 30%;
+    margin-top: 10px;
+}
+.tasty-recipes-image img{
+    width: 100%;
+}
+.tasty-recipes-header-content{
+    background-color: #f9f9f9;
+    flex-basis: 66%;
+}
+h2.tasty-recipes-title{
+    background-color: #f9f9f9;
+    font-size: 28px;
+    margin-bottom: 0;
+}
+.tasty-recipes .tasty-recipes-details ul{
+    background-color: #f9f9f9;
+    list-style-type: none;
+    margin: 20px 0;
+}
+.tasty-recipes-details ul li{
+    background-color: #f9f9f9;
+    display: flex;
+}
+.tasty-recipes-details ul li span.tasty-recipes-label{
+    background-color: #f9f9f9;
+    flex-basis: 25%;
+    font-size: 15px;
+    font-weight: 600;
+    font-style: normal;
+}
+.tasty-recipes-details ul li span{
+    background-color: #f9f9f9;
+    flex-basis: 70%;
+    font-size: 15px;
+    font-style: normal;
+}
+.tasty-recipes-details ul li a{
+    background-color: #f9f9f9;
+}
+.tasty-recipes-entry-content{
+    background-color: #f9f9f9;
+}
+.tasty-recipes-entry-content h3{
+    background-color: #f9f9f9;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 0 15px;
+}
+.tasty-recipes-entry-content p{
+    background-color: #f9f9f9;
+    margin: 0;
+}
+.tasty-recipes-description{
+    background-color: #f9f9f9;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eee;
+}
+.tasty-recipes-ingredients{
+    background-color: #f9f9f9;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eee;
+}
+.tasty-recipes-ingredients-header, .tasty-recipes-ingredients-body{
+    background-color: #f9f9f9;
+}
+.tasty-recipes-entry-content h4{
+    background-color: #f9f9f9;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    margin: 10px 0 15px;
+}
+.tasty-recipes-entry-content .tasty-recipes-ingredients .tasty-recipes-ingredients-body ul{
+    list-style-type: none;
+    margin: 0 0 0 36px;
+}
+.tasty-recipes-entry-content .tasty-recipes-ingredients .tasty-recipes-ingredients-body ul li{
+    background-color: #f9f9f9;
+    font-size: 17px;
+    line-height: 2;
+    margin: 0;
+}
+.tasty-recipes-entry-content .tasty-recipes-ingredients .tasty-recipes-ingredients-body ul li label,
+.tasty-recipes-entry-content .tasty-recipes-ingredients .tasty-recipes-ingredients-body ul li label strong{
+    background-color: #f9f9f9;
+}
+.tasty-recipes-entry-content .tasty-recipes-ingredients .tasty-recipes-ingredients-body ul li input{
+    margin-right: 15px;
+    display: inline-block;
+}
+.tasty-recipes-entry-content .tasty-recipes-ingredients .tasty-recipes-ingredients-body ul li input + span{
+    font-style: normal;
+}
+.tasty-recipes-entry-content .tasty-recipes-ingredients .tasty-recipes-ingredients-body ul li input:checked + span{
+    font-style: normal;
+    text-decoration: line-through;
+}
+.cross-word{
+    text-decoration: line-through;
+}
+
+
+.tasty-recipes-instructions{
+    background-color: #f9f9f9;
+    border-bottom: 2px solid #eee;
+}
+.tasty-recipes-instructions-body,
+.tasty-recipes-entry-content .tasty-recipes-instructions .tasty-recipes-instructions-body ol li,
+.tasty-recipes-entry-content .tasty-recipes-instructions .tasty-recipes-instructions-body ol li strong{
+    background-color: #f9f9f9;
+}
+
+.tasty-recipes-video-embed{
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+    margin: 10px 0;
+}
+.tasty-recipes-video-embed iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.tasty-recipes-entry-content .tasty-recipes-notes,
+.tasty-recipes-entry-content .tasty-recipes-notes .tasty-recipes-notes-body,
+.tasty-recipes-entry-content .tasty-recipes-notes .tasty-recipes-notes-body ol li{
+    background-color: #f9f9f9;
+}
+
+
+
+
+.right-side{
+    flex-basis: 31%;
+}
+.widget-area{
+    margin-top: 30px;
+}
+.widget{
+    margin: 0 0 20px;
+}
+.callout-container-boder{
+    background-color: #fff;
+    border: 1px solid #ffeef1;
+    padding: 3px;
+}
+.callout-container{
+    background-color: #ffeef1;
+    padding: 40px;
+    text-align: left;
+}
+.callout-title{
+    background-color: #ffeef1;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.callout-content{
+    background-color: #ffeef1;
+}
+.callout-content p{
+    background-color: #ffeef1;
+    font-size: 14px;
+    margin-top: 15px;
+}
+.callout-content p a{
+    background-color: #ffeef1;
+    text-decoration: underline;
+}
+
+h3.widget-title{
+    background-color: #f6f5f5;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: inline-block;
+
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px;
+}
+ul.related-posts-list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 18px;
+    border: 2px solid #f6f5f5;
+}
+ul.related-posts-list li:first-child{
+    padding: 0 0 13px;
+}
+ul.related-posts-list li{
+    flex-basis: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f0efef;
+    padding: 10px 0 13px;
+}
+ul.related-posts-list li:last-child{
+    border-bottom: none;
+    padding-bottom: 0;
+}
+ul.related-posts-list li .related-post-image{
+    flex-basis: 35%;
+}
+ul.related-posts-list li .related-post-content{
+    flex-basis: 61%;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 23.4px;
+    text-align: left;
+}
+ul.related-posts-list li .related-post-content .related-post-category a{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    color: #c3366f;
+    font-weight: 400;
+
+}

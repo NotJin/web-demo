@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Privacy Policy - Emma's Baking Recipes</title>
+    <link rel="icon" href="images/head-icon.png" type="image/ icon type"/>
+    <!-- File css phần layout + trang home -->
+    <link rel="stylesheet" href="css/layout.css"/>
+    <!-- File css phần content các trang khác -->
+    <link rel="stylesheet" href="css/other-pages-content.css"/>
+
+    <!-- Lấy font google -->
+    <!-- font sans-serif -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+
+    <!-- font serif -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+
+    <!-- Lấy icon từ Font Awesome -->
+    <link rel="stylesheet" href="libs/fontawesome/css/all.css"/>
+</head>
+<body>
+    <a id="top"></a>
+
+    <!-- A) PHẦN HEADER -->
+    <header class="section header">
+        <div class="pink-header">
+            <div class="container">
+                <div class="pink-header-email">
+                    <!-- Trigger/Open the Modal -->
+                    <a id="myBtn">Receive newest recipes via email <i class="fa-solid fa-arrow-right"></i></a>
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div class="close">&times;</div>
+                            <div class="modal-name">SUBSCRIBE</div>
+                            <div class="modal-title">Baking Made Easy</div>
+                            <div class="modal-excerpt">This email series is a great place to start. I’ll walk you through a few of my most popular recipes and show you exactly why they work.</div>
+                            <div class="modal-form-container">
+                                <form method="get" action="#" class="signup-bar">
+                                    <input required type="text" placeholder="Your first name" name="first-name"/>
+                                    <input required type="email" placeholder="Your email address" name="email-address"/>
+                                    <button type="submit">Sign up!</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pink-header-nav">
+                    <ul>
+                        <li><a href="start-here.html">Start here</a></li>
+                        <li>&#183;</li>
+                        <li><a href="about-and-contact.html">About</a></li>
+                        <li>&#183;</li>
+                        <li><a href="baking-tips-list.html">Baking tip</a></li>
+                        <li>&#183;</li>
+                        <li><a href="cookbook-list.html">Cookbooks</a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="container">
+                <div class="site-logo">
+                    <a href="home.html"><img class="logo header" src="images/logo.png"/></a>
+                </div>
+                <div class="categories-nav">
+                    <ul class="menu-header-categories">
+                        <li class="menu-item"><a href="recipe-index.html"><img src="images/header-icon1-menu.png"/>All recipes</a></li>
+                        <li class="menu-item"><a href="bread-archives.html"><img src="images/header-icon2-bread.png"/>Bread</a></li>
+                        <li class="menu-item"><a href="cakes-archives.html"><img src="images/header-icon3-cakes.png"/>Cakes</a></li>
+                        <li class="menu-item"><a href="cookie-archives.html"><img src="images/header-icon4-cookies.png"/>Cookies</a></li>
+                        <li class="menu-item"><a href="video.html"><img src="images/header-icon5-videos.png"/>Videos</a></li>
+                    </ul>
+                </div>
+                <div class="header-search">
+                    <form method="get" action="#" class="search-form">
+                        <input required type="text" placeholder="Search...." name="search"/>
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="sticky-header" id="sticky-header">
+            <div class="container">
+                <div class="site-logo">
+                    <a href="home.html"><img class="logo header" src="images/logo.png"/></a>
+                </div>
+                <div class="categories-nav">
+                    <ul class="menu-header-categories">
+                        <li class="menu-item"><a href="recipe-index.html"><img src="images/header-icon1-menu.png"/>All recipes</a></li>
+                        <li class="menu-item"><a href="bread-archives.html"><img src="images/header-icon2-bread.png"/>Bread</a></li>
+                        <li class="menu-item"><a href="cakes-archives.html"><img src="images/header-icon3-cakes.png"/>Cakes</a></li>
+                        <li class="menu-item"><a href="cookie-archives.html"><img src="images/header-icon4-cookies.png"/>Cookies</a></li>
+                        <li class="menu-item"><a href="video.html"><img src="images/header-icon5-videos.png"/>Videos</a></li>
+                    </ul>
+                </div>
+                <div class="header-search">
+                    <form method="get" action="#" class="search-form">
+                        <input required type="text" placeholder="Search...." name="search"/>
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- B) PHẦN NAV -->
+    <nav class="section nav">
+        <div class="container">
+            <div class="browse">Browse by:</div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="recipe-index.html">Type <i class="fa-solid fa-angle-down"></i></a></button>
+                <div class="dropdown-content">
+                    <a href="recipe-index.html">Bread</a>
+                    <a href="recipe-index.html">Breakfirst</a>
+                    <a href="recipe-index.html">Brownies & Bars</a>
+                    <a href="recipe-index.html">Cake</a>
+                    <a href="recipe-index.html">Candy</a>
+                    <a href="recipe-index.html">Cheesecake</a>
+                    <a href="recipe-index.html">Cheesecake</a>
+                    <a href="recipe-index.html">Coockies</a>
+                    <a href="recipe-index.html">Coockies</a>
+                    <a href="recipe-index.html">Cupcakes</a>
+                    <a href="recipe-index.html">Desserts</a>
+                    <a href="recipe-index.html">Dinner & sides</a>
+                    <a href="recipe-index.html">Muffins</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="recipe-index.html">Dietary <i class="fa-solid fa-angle-down"></i></a></button>
+                <div class="dropdown-content">
+                    <a href="recipe-index.html">Dairy free</a>
+                    <a href="recipe-index.html">Egg free</a>
+                    <a href="recipe-index.html">Gluten free</a>
+                    <a href="recipe-index.html">Vegan</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="recipe-index.html">Ingredient <i class="fa-solid fa-angle-down"></i></a></button>
+                <div class="dropdown-content">
+                    <a href="recipe-index.html">Apples</a>
+                    <a href="recipe-index.html">Bananas</a>
+                    <a href="recipe-index.html">Blueberries</a>
+                    <a href="recipe-index.html">Chocolate</a>
+                    <a href="recipe-index.html">Cinnamon</a>
+                    <a href="recipe-index.html">Lemons</a>
+                    <a href="recipe-index.html">Peanut butter</a>
+                    <a href="recipe-index.html">Pumpkin</a>
+                    <a href="recipe-index.html">More...</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="recipe-index.html">Occasion <i class="fa-solid fa-angle-down"></i></a></button>
+                <div class="dropdown-content">
+                    <a href="recipe-index.html">Christmas</a>
+                    <a href="recipe-index.html">Easter</a>
+                    <a href="recipe-index.html">Halloween</a>
+                    <a href="recipe-index.html">St. Patrick's day</a>
+                    <a href="recipe-index.html">Thanksgiving</a>
+                    <a href="recipe-index.html">Valentine's day</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="recipe-index.html">Season <i class="fa-solid fa-angle-down"></i></a></button>
+                <div class="dropdown-content">
+                    <a href="recipe-index.html">Spring</a>
+                    <a href="recipe-index.html">Summer</a>
+                    <a href="recipe-index.html">Fall</a>
+                    <a href="recipe-index.html">Winter</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="recipe-index.html">Skill-level <i class="fa-solid fa-angle-down"></i></a></button>
+                <div class="dropdown-content">
+                    <a href="recipe-index.html">Beginner</a>
+                    <a href="recipe-index.html">Intermediate</a>
+                    <a href="recipe-index.html">Advanced</a>
+                </div>
+            </div>
+            <img class="logo-nav" src="images/nav-logo.png"/>
+        </div>
+    </nav>
+
+    <!-- C) PHẦN CONTENT -->
+    <section class="section main">
+        <div class="page-header">
+            <div class="page-header-container">
+                <div class="content-center-header">
+                    <h1 class="page-title gray-background">Privacy Policy</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container privacy-policy">
+            <p><strong>Last updated August 6th, 2021</strong></p>
+            <p>Emma’s Baking Recipes, LLC (“we” or “us” or “our”) respects the privacy of our users (“user” or “you”). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website (https://emmasbakingrecipes.com/) or any other media form, media channel, mobile website, or mobile application related or connected thereto (collectively, the “Website”). Please read this Privacy Policy carefully.</p>
+            <p>IF YOU DO NOT AGREE WITH THE TERMS OF THIS PRIVACY POLICY, PLEASE DO NOT ACCESS THE WEBSITE.</p>
+            <p>We reserve the right to make changes to this Privacy Policy at any time and for any reason. We will alert you about any changes by updating the “revised” date of this Privacy Policy. Any changes or modifications will be effective immediately upon posting the updated Privacy Policy on the Website, and you waive the right to receive specific notice of each such change or modification. You are encouraged to periodically review this Privacy Policy to stay informed of updates. You will be deemed to have been made aware of, will be subject to, and will be deemed to have accepted the changes in any revised Privacy Policy by your continued use of the Website after the date such revised Privacy Policy is posted.</p>
+            <p><strong>COLLECTION OF YOUR INFORMATION</strong></p>
+            <p>We may collect information about you in a variety of ways. The information we may collect on the Website includes:</p>
+            <p><strong>Personal Data</strong></p>
+            <p>Personally identifiable information, such as your name, address, email address, and telephone number, and demographic information, such as your age, gender, hometown, and interests, that you voluntarily give to us when you choose to participate in various activities related to the Website, such as newsletter subscriptions, downloads, and website comments. You are under no obligation to provide us with personal information of any kind, however your refusal to do so may prevent you from using certain features of the Website.</p>
+            <p><strong>Derivative Data</strong></p>
+            <p>Derivative Data is information our servers may automatically collect when you access the Website, such as your IP address, your browser type, your operating system, your access times, and the pages you have viewed directly before and after accessing the Website.</p>
+            <p><strong>Data from Contests, Giveaways, and Surveys</strong></p>
+            <p>Personal and other information you may provide when entering contests or giveaways and/or responding to surveys.</p>
+            <p><strong>USE OF YOUR INFORMATION</strong></p>
+            <p>Having accurate information about you permits us to provide you with a smooth, efficient, and customized experience. Specifically, we may use information collected about you via the Website to:</p>
+            <ul>
+                <li>Administer sweepstakes, promotions, and contests.</li>
+                <li>Compile anonymous statistical data and analysis for use internally or with third parties.</li>
+                <li>Deliver targeted advertising, coupons, newsletters, promotions, and other information regarding the Website to you.</li>
+                <li>Allow comments on the Website.</li>
+                <li>Send you a periodic digital newsletter or Website feed.</li>
+                <li>Increase the efficiency and operation of the Website.</li>
+                <li>Monitor and analyze usage and trends to improve your experience with the Website.</li>
+                <li>Notify you of updates to the Website.</li>
+                <li>Offer new products, services, and/or recommendations to you.</li>
+                <li>Perform other business activities as needed.</li>
+                <li>Request feedback and contact you about your use of the Website.</li>
+                <li>Resolve disputes and troubleshoot problems.</li>
+            </ul>
+            <p><strong>DISCLOSURE OF YOUR INFORMATION</strong></p>
+            <p>We may share information we have collected about you in certain situations. Your information may be disclosed as follows:</p>
+            <p><strong>By Law or to Protect Rights</strong></p>
+            <p>If we believe the release of information about you is necessary to respond to legal process, to investigate or remedy potential violations of our policies, or to protect the rights, property, and safety of others, we may share your information as permitted or required by any applicable law, rule, or regulation. This includes exchanging information with other entities for fraud protection and privacy risk reduction.</p>
+            <p><strong>Third-Party Service Providers</strong></p>
+            <p>We may share your information with third parties that perform services for us or on our behalf, including data analysis, email delivery, hosting services, customer service, and marketing assistance.</p>
+            <p><strong>Marketing Communications</strong></p>
+            <p>With your consent, or with an opportunity for you to withdraw consent, we may share your information with third parties for marketing purposes, as permitted by law.</p>
+            <p><strong>Online Postings</strong></p>
+            <p>When you post comments, contributions, or other content to the Website, your posts may be viewed by all users and may be publicly distributed outside the Website in perpetuity.</p>
+            <p><strong>Third-Party Advertisers</strong></p>
+            <p>We use a third-party advertising company to serve ads when you visit the Website. This company may use information about your visits to the Website and other websites that are contained in web cookies to provide advertisements about goods and services of interest to you.</p>
+            <p><strong>Business Partners</strong></p>
+            <p>We may share your information with our business partners to offer you certain products, services, or promotions you may enjoy.</p>
+            <p><strong>Other Third Parties</strong></p>
+            <p>We may share your information with advertisers and investors for the purpose of conducting general business analysis. We may also share your information with such third parties for marketing purposes, as permitted by law.</p>
+            <p><strong>Sale or Bankruptcy</strong></p>
+            <p>If we reorganize or sell all or a portion of our assets, undergo a merger, or are acquired by another entity, we may transfer your information to the successor entity. If we go out of business or enter bankruptcy, your information would be an asset transferred or acquired by a third party. You acknowledge that such transfers may occur and that the transferee may decline to honor commitments we made in this Privacy Policy.</p>
+            <p>We are not responsible for the actions of third parties with whom <em>you</em> share personal or sensitive data, and we have no authority to manage or control third-party solicitations. If you no longer wish to receive correspondence, emails or other communications from third parties, you are responsible for contacting the third party directly.</p>
+            <p><strong>TRACKING TECHNOLOGIES</strong></p>
+            <p><strong>Cookies, Web Beacons, and Tracking Pixels</strong></p>
+            <p>We use cookies, web beacons, tracking pixels, and other tracking technologies on the Website to help customize the Website and improve your experience. When you access the Website, your personal information is not collected through the use of tracking technology. Most browsers are set to accept cookies by default. You can remove or reject cookies, but be aware that such action could affect the availability and functionality of the Website. You may not decline web beacons; however, they can be rendered ineffective by declining all cookies or by modifying your web browser’s settings to notify you each time a cookie is tendered, permitting you to accept or decline cookies on an individual basis.</p>
+            <p>Periodically, we may need to include a tracking pixel to monitor the effectiveness of information or materials we share. For example, you may subscribe to our newsletter, which may be used for advertising purposes. Newsletters sent may contain tracking pixels. The pixel is embedded in emails and allows for an analysis of the success of online marketing campaigns. Because of these tracking pixels, we may see if and when you open an email and which links within the email you click. Also, this allows the Website to adapt the content of future newsletters to the interests of the user. We do not share this information with third parties.</p>
+            <p><strong>Internet-Based Advertising</strong></p>
+            <p>We use third-party software from AdThrive, a CMI Marketing, Inc. property, to serve ads on the Website. This third-party software may use cookies or similar tracking technology to help manage and optimize your online experience with us. For more information about opting out of internet-based ads, visit the third-party network or review the <a href="http://www.aboutads.info/choices/" target="_blank" rel="nofollow sponsored noopener">Digital Advertising Alliance Opt-Out Tool</a>.</p>
+            <p>This Website is affiliated with CMI Marketing, Inc., d/b/a CafeMedia (“CafeMedia”) for the purposes of placing advertising on the Website, and CafeMedia will collect and use certain data for advertising purposes. To learn more about CafeMedia’s data usage, click the following link: <a href="https://www.cafemedia.com/publisher-advertising-privacy-policy" target="_blank" rel="nofollow sponsored noopener">www.cafemedia.com/publisher-advertising-privacy-policy</a></p>
+            <p><strong>Website Analytics</strong></p>
+            <p>We also partner with selected third-party vendors, such as Google Analytics, to allow tracking technologies and remarketing services on the Website through the use of first party cookies and third-party cookies, to, among other things, analyze and track users’ use of the Website, determine the popularity of certain content and better understand online activity. By accessing the Website, you consent to the collection and use of your information by these third-party vendors. You are encouraged to review their privacy policies and contact them directly for responses to your questions. We do not transfer personal information to these third-party vendors. However, if you do not want any information to be collected and used by tracking technologies, you can visit the third-party vendor or review the <a href="http://www.aboutads.info/choices/" target="_blank" rel="nofollow sponsored noopener">Digital Advertising Alliance Opt-Out Tool</a>.</p>
+            <p>You should be aware that getting a new computer, installing a new browser, upgrading an existing browser, or erasing or otherwise altering your browser’s cookies files may also clear certain opt-out cookies, plug-ins, or settings.</p>
+            <p><strong>Sponsored Content</strong></p>
+            <p>We provide sponsored content in which we are compensated for recipe development, product reviews, and other work. Sponsored content may contain separate tracking pixels. The pixel may be embedded in emails or blog posts and allows an analysis of the success of online marketing campaigns. Because of these tracking pixels, we may see if and when you click on a specific link, open an email, and which links within the email you click. Also, this allows us to adapt the content of future posts to the interests of the user. This behavior may be passed on to third parties.</p>
+            <p><strong>THIRD-PARTY WEBSITES</strong></p>
+            <p>The Website contains links to third-party websites and applications of interest, including advertisements and external services, that are not affiliated with us. Once you have used these links to leave the Website, any information you provide to these third parties is not covered by this Privacy Policy, and we cannot guarantee the safety and privacy of your information. Before visiting and providing any information to any third-party websites, you should inform yourself of the privacy policies and practices (if any) of the third party responsible for that website, and should take those steps necessary to, in your discretion, protect the privacy of your information. We are not responsible for the content or privacy and security practices and policies of any third parties, including other sites, services or applications that may be linked to or from the Website.</p>
+            <p>The Website engages in affiliate marketing, which is done by embedding tracking links into the Website. If you click on a link for one of our affiliate partners, a cookie will be placed on your browser to track any sales for purposes of commissions.</p>
+            <p>We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and providing links to products or services available from Amazon.com. As part of this Amazon Associates program, the Website may post customized links, provided by Amazon, to track the referrals to the Amazon listing. This affiliate program utilizes cookies to track visits for the purposes of assigning commission on these sales.</p>
+            <p>This Website is a participant in the RewardStyle content monetization platform. By clicking on select links, you will be transferred to a third party from which you can make a purchase. RewardStyle utilizes cookies to track visits for the purposes of assigning commission on these sales. Please refer to the <a href="https://about.rewardstyle.com/privacy-policy" target="_blank" rel="nofollow sponsored noopener">RewardStyle privacy policy</a> for more information.</p>
+            <p>We are an affiliate partner with Sweetapolita Sprinkles. By clicking on select links, you will be transferred to their website from which you can make a purchase. Sweetapolita utilizes cookies to track visits for the purposes of assigning commission on these sales. Please <a href="https://sweetapolitashop.com/pages/say-hello" target="_blank" rel="nofollow sponsored noopener">contact Sweetapolita</a> for more information on how they manage your information.</p>
+            <p>&nbsp;</p>
+            <p>We participate in the <a href="https://affiliates.target.com/display-terms-pdf/Terms.pdf?id=___9XpvYq1Sf086VqN-7CdeeVccCt0zNzsd" target="_blank" rel="nofollow sponsored noopener">Target Affiliate Marketing Program</a>. This means we may post customized links, provided by Target, to track referrals to their website, and we may earn an advertising fee from any purchases made through these links. This program utilizes cookies to track visits for the purposes of assigning commission on these sales.</p>
+            <p>We currently use ConvertKit for delivery of email updates and newsletters. The ConvertKit service will store your name and email address for purposes of delivering such communications. Please refer to the <a href="https://convertkit.com/privacy" target="_blank" rel="nofollow sponsored noopener">ConvertKit privacy policy</a> for further information.</p>
+            <p><strong>SECURITY OF YOUR INFORMATION</strong></p>
+            <p>We use administrative, technical, and physical security measures to help protect your personal information. While we have taken reasonable steps to secure the personal information you provide to us, please be aware that despite our efforts, no security measures are perfect or impenetrable, and no method of data transmission can be guaranteed against any interception or other type of misuse. Any information disclosed online is vulnerable to interception and misuse by unauthorized parties. Therefore, we cannot guarantee complete security if you provide personal information.</p>
+            <p><strong>RIGHTS RELATED TO YOUR PERSONAL INFORMATION</strong></p>
+            <p>Opt-out – You may opt-out of future email communications by following the unsubscribe links in our emails.</p>
+            <p>The General Data Protection Regulation or “GDPR” gives certain rights to individuals in relation to their personal data. In addition, we offer transparency and access controls to help users take advantage of those rights. As available and except as limited under applicable law, the rights afforded to individuals are:</p>
+            <ul>
+                <li>Right of access – the right to be informed of, and request access to, the personal data we process about you;</li>
+                <li>Right to rectification – the right to request that we amend or update your personal data where it is inaccurate or incomplete;</li>
+                <li>Right to erasure – the right to request that we delete your personal data;</li>
+                <li>Right to restrict – the right to request that we temporarily or permanently stop processing all or some of your personal data;</li>
+                <li>Right to object –
+                    <ul>
+                        <li>the right, at any time, to object to us processing your personal data on grounds relating to your particular situation;</li>
+                        <li>the right to object to your personal data being processed for direct marketing purposes;</li>
+                    </ul>
+                </li>
+                <li>Right to data portability – the right to request a copy of your personal data in electronic format and the right to transmit that personal data for use in another party’s service; and</li>
+                <li>Right not to be subject to automated decision-making – the right to not be subject to a decision based solely on automated decision making, including profiling, where the decision would have a legal effect on you or produce a similarly significant effect.</li>
+            </ul>
+            <p>You may also <a href="about-and-contact.html">contact us</a> at and inform us of your desire to exercise your rights. We will reply with further instructions to verify your identity and provide details regarding the process. Please note that we may need to retain certain information for recordkeeping purposes or to complete transactions, or when required by law.</p>
+            <p><strong>SENSITIVE PERSONAL INFORMATION</strong></p>
+            <p>At no time should you submit sensitive personal information to the Website. This includes your social security number, information regarding race or ethnic origin, political affiliation or opinions, religious beliefs, health information, criminal background, or other sensitive personal information. If you elect to submit such information to us, it will be subject to this Privacy Policy.</p>
+            <p><strong>CONTROLS FOR DO-NOT-TRACK FEATURES</strong></p>
+            <p>Most web browsers and some mobile operating systems include a Do-Not-Track (“DNT”) feature or setting you can activate to signal your privacy preference not to have data about your online browsing activities monitored and collected. No uniform technology standard for recognizing and implementing DNT signals has been finalized. As such, we do not currently respond to DNT browser signals or any other mechanism that automatically communicates your choice not to be tracked online. If a standard for online tracking is adopted that we must follow in the future, we will inform you about that practice in a revised version of this Privacy Policy.</p>
+            <p><strong>CONTACT US</strong></p>
+            <p>If you have questions or comments about this Privacy Policy, please contact us using the information provided on our <a href="about-and-contact.html">Contact page</a>.</p>
+        </div>
+    </section>
+
+    <!-- D) PHẦN FOOTER -->
+    <footer class="section footer">
+        <!-- Phần LOGO FOOTER -->
+        <div class="logo-footer-container">
+            <div class="container">
+                <div class="stripe-pattern">
+                    <div class="stripe-pink"></div>
+                    <div class="stripe-blue"></div>
+                    <div class="stripe-orange"></div>
+                </div>
+                <div class="logo-footer">
+                    <img src="images/footer-logo.png"/>
+                </div>
+                <div class="icon-footer">
+                    <img class="icon-footer-left" src="images/footer-icon1.png" width=20px/>
+                    <img class="icon-footer-left" src="images/footer-icon2.png" width=20px/>
+                    <img class="icon-footer-left" src="images/footer-icon3.png" width=20px/>
+                    <img class="icon-footer-left" src="images/footer-icon4.png" width=20px/>
+                    <img class="icon-footer-right" src="images/footer-icon5.png" width=20px/>
+                    <img class="icon-footer-right" src="images/footer-icon6.png" width=20px/>
+                    <img class="icon-footer-right" src="images/footer-icon7.png" width=20px/>
+                    <img class="icon-footer-right" src="images/footer-icon8.png" width=20px/>
+                </div>
+            </div>
+        </div>
+        <a id="signup-footer"></a>
+        <!-- Phần SIGNUP-FOOTER -->
+        <div class="signup-footer-background">
+            <div class="container">
+                <div class="signup-footer">
+                    <div class="signup-intro">Something sweet for your inbox: Sign up for FREE recipes!</div>
+                    <div class="signup-container">
+                        <form method="get" action="#" class="signup-bar">
+                            <input required type="text" placeholder="Your first name" name="first-name"/>
+                            <input required type="email" placeholder="Your email address" name="email-address"/>
+                            <button type="submit">Sign up!</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Phần NAV FOOTER -->
+        <div class="nav-footer">
+            <div class="container">
+                <div class="nav-footer-left"><a href="#top"><i class="fa-solid fa-arrow-up"></i>Top</a></div>
+                <div class="nav-footer-left"><a href="start-here.html">Start here</a></div>
+                <div class="nav-footer-left"><a href="about-and-contact.html">About us</a></div>
+                <div class="nav-footer-left"><a href="privacy-policy.html">Privacy policy</a></div>
+                <div class="nav-footer-left"><a href="frequently-asked-questions.html">FAQ</a></div>
+                <div class="nav-footer-right">Emma's Baking Recipes &#169; 2022. Group project by second team.</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS phần Modal -->
+    <script type="text/javascript" src="js/modal.js"></script>
+    <!-- JS phần Sticky header -->
+    <script type="text/javascript" src="js/sticky-header.js"></script>
+</body>
+</html>

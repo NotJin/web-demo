@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Emma's Baking Recipes | A place to find wonderful ideas</title>
+    <link rel="icon" href="images/head-icon.png" type="image/ icon type"/>
+    <!-- File css phần layout + trang home -->
+    <link rel="stylesheet" href="css/layout.css"/>
+    <!-- File css phần content các trang khác -->
+    <link rel="stylesheet" href="css/other-pages-content.css"/>
+
+    <!-- Lấy font google -->
+    <!-- font sans-serif -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+
+    <!-- font serif -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+
+    <!-- Lấy icon từ Font Awesome -->
+    <link rel="stylesheet" href="libs/fontawesome/css/all.css"/>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css"/>
+
+</head>
+<body>
+    <a id="top"></a>
+
+    <!-- A) PHẦN HEADER -->
+    <header class="section header">
+        <div class="pink-header">
+            <div class="container">
+                <div class="pink-header-email">
+                    <!-- Trigger/Open the Modal -->
+                    <a id="myBtn">Receive newest recipes via email <i class="fa-solid fa-arrow-right"></i></a>
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div class="close">&times;</div>
+                            <div class="modal-name">SUBSCRIBE</div>
+                            <div class="modal-title">Baking Made Easy</div>
+                            <div class="modal-excerpt">This email series is a great place to start. I’ll walk you through a few of my most popular recipes and show you exactly why they work.</div>
+                            <div class="modal-form-container">
+                                <form method="get" action="#" class="signup-bar">
+                                    <input required type="text" placeholder="Your first name" name="first-name"/>
+                                    <input required type="email" placeholder="Your email address" name="email-address"/>
+                                    <button type="submit">Sign up!</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pink-header-nav">
+                    <ul>
+                        <li><a href="start-here.html">Start here</a></li>
+                        <li>&#183;</li>
+                        <li><a href="about-and-contact.html">About</a></li>
+                        <li>&#183;</li>
+                        <li><a href="baking-tips-list.html">Baking tip</a></li>
+                        <li>&#183;</li>
+                        <li><a href="cookbook-list.html">Cookbooks</a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="container">
+                <div class="site-logo">
+                    <a href="home.html"><img class="logo header" src="images/logo.png"/></a>
+                </div>
+                <div class="categories-nav">
+                    <ul class="menu-header-categories">
+                        <li class="menu-item"><a href="recipe-index.html"><img src="images/header-icon1-menu.png"/>All recipes</a></li>
+                        <li class="menu-item"><a href="bread-archives.html"><img src="images/header-icon2-bread.png"/>Bread</a></li>
+                        <li class="menu-item"><a href="cakes-archives.html"><img src="images/header-icon3-cakes.png"/>Cakes</a></li>
+                        <li class="menu-item"><a href="cookie-archives.html"><img src="images/header-icon4-cookies.png"/>Cookies</a></li>
+                        <li class="menu-item"><a href="video.html"><img src="images/header-icon5-videos.png"/>Videos</a></li>
+                    </ul>
+                </div>
+                <div class="header-search">
+                    <form method="get" action="#" class="search-form">
+                        <input required type="text" placeholder="Search...." name="search"/>
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="sticky-header" id="sticky-header">
+            <div class="container">
+                <div class="site-logo">
+                    <a href="home.html"><img class="logo header" src="images/logo.png"/></a>
+                </div>
+                <div class="categories-nav">
+                    <ul class="menu-header-categories">
+                        <li class="menu-item"><a href="recipe-index.html"><img src="images/header-icon1-menu.png"/>All recipes</a></li>
+                        <li class="menu-item"><a href="bread-archives.html"><img src="images/header-icon2-bread.png"/>Bread</a></li>
+                        <li class="menu-item"><a href="cakes-archives.html"><img src="images/header-icon3-cakes.png"/>Cakes</a></li>
+                        <li class="menu-item"><a href="cookie-archives.html"><img src="images/header-icon4-cookies.png"/>Cookies</a></li>
+                        <li class="menu-item"><a href="video.html"><img src="images/header-icon5-videos.png"/>Videos</a></li>
+                    </ul>
+                </div>
+                <div class="header-search">
+                    <form method="get" action="#" class="search-form">
+                        <input required type="text" placeholder="Search...." name="search"/>
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- B) PHẦN NAV -->
+    <nav class="section nav">
+        <div class="container">
+            <div class="browse">Browse by:</div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="recipe-index.html">Type <i class="fa-solid fa-angle-down"></i></a></button>
+                <div class="dropdown-content">
+                    <a href="recipe-index.html">Bread</a>
+                    <a href="recipe-index.html">Breakfirst</a>
+                    <a href="recipe-index.html">Brownies & Bars</a>
+                    <a href="recipe-index.html">Cake</a>
+                    <a href="recipe-index.html">Candy</a>
+                    <a href="recipe-index.html">Cheesecake</a>
+                    <a href="recipe-index.html">Cheesecake</a>
+                    <a href="recipe-index.html">Coockies</a>
+                    <a href="recipe-index.html">Coockies</a>
+                    <a href="recipe-index.html">Cupcakes</a>
+                    <a href="recipe-index.html">Desserts</a>
+                    <a href="recipe-index.html">Dinner & sides</a>
+                    <a href="recipe-index.html">Muffins</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="recipe-index.html">Dietary <i class="fa-solid fa-angle-down"></i></a></button>
+                <div class="dropdown-content">
+                    <a href="recipe-index.html">Dairy free</a>
+                    <a href="recipe-index.html">Egg free</a>
+                    <a href="recipe-index.html">Gluten free</a>
+                    <a href="recipe-index.html">Vegan</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="recipe-index.html">Ingredient <i class="fa-solid fa-angle-down"></i></a></button>
+                <div class="dropdown-content">
+                    <a href="recipe-index.html">Apples</a>
+                    <a href="recipe-index.html">Bananas</a>
+                    <a href="recipe-index.html">Blueberries</a>
+                    <a href="recipe-index.html">Chocolate</a>
+                    <a href="recipe-index.html">Cinnamon</a>
+                    <a href="recipe-index.html">Lemons</a>
+                    <a href="recipe-index.html">Peanut butter</a>
+                    <a href="recipe-index.html">Pumpkin</a>
+                    <a href="recipe-index.html">More...</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="recipe-index.html">Occasion <i class="fa-solid fa-angle-down"></i></a></button>
+                <div class="dropdown-content">
+                    <a href="recipe-index.html">Christmas</a>
+                    <a href="recipe-index.html">Easter</a>
+                    <a href="recipe-index.html">Halloween</a>
+                    <a href="recipe-index.html">St. Patrick's day</a>
+                    <a href="recipe-index.html">Thanksgiving</a>
+                    <a href="recipe-index.html">Valentine's day</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="recipe-index.html">Season <i class="fa-solid fa-angle-down"></i></a></button>
+                <div class="dropdown-content">
+                    <a href="recipe-index.html">Spring</a>
+                    <a href="recipe-index.html">Summer</a>
+                    <a href="recipe-index.html">Fall</a>
+                    <a href="recipe-index.html">Winter</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="recipe-index.html">Skill-level <i class="fa-solid fa-angle-down"></i></a></button>
+                <div class="dropdown-content">
+                    <a href="recipe-index.html">Beginner</a>
+                    <a href="recipe-index.html">Intermediate</a>
+                    <a href="recipe-index.html">Advanced</a>
+                </div>
+            </div>
+            <img class="logo-nav" src="images/nav-logo.png"/>
+        </div>
+    </nav>
+
+    <!-- C) PHẦN CONTENT -->
+    <section class="section main">
+        <div class="page-header-banner-background" style="height: 280px"></div>
+        <div class="container" style="margin-top: -260px">
+            <!-- Phần LATEST POST -->
+            <div class="latest-post-container" style="margin-top: 0">
+                <div class="latest-post title" style="background-color: #f6f5f5">
+                    <div class="latest-post section-label">Latest posts</div>
+                    <a href="recipe-index.html" class="view-all-link" style="background-color: #f6f5f5">View <span style="background-color: #f6f5f5">more </span> posts <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="latest-post recipe-card-container">
+
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="carousel-item-container">
+                                    <div class="recipe-card">
+                                        <div class="recipe-image"><a href="recipe-post-number-1.html"><img src="images/content-latest-post-image1.jpg"/></a></div>
+                                        <div class="recipe-number"><span>1</span></div>
+                                        <div class="recipe-title"><a href="recipe-post-number-1.html">Simply the Best Blueberry Pie</a></div>
+                                    </div>
+                                    <div class="recipe-card">
+                                        <div class="recipe-image"><a href="recipe-post-number-1.html"><img src="images/content-latest-post-image2.jpg"/></a></div>
+                                        <div class="recipe-number"><span>2</span></div>
+                                        <div class="recipe-title"><a href="recipe-post-number-1.html">Easy Feta Zucchini Casserole</a></div>
+                                    </div>
+                                    <div class="recipe-card">
+                                        <div class="recipe-image"><a href="recipe-post-number-1.html"><img src="images/content-latest-post-image3.webp"/></a></div>
+                                        <div class="recipe-number"><span>3</span></div>
+                                        <div class="recipe-title"><a href="recipe-post-number-1.html">Peanut Butter Filled Brownie Cookies</a></div>
+                                    </div>
+                                    <div class="recipe-card">
+                                        <div class="recipe-image"><a href="recipe-post-number-1.html"><img src="images/content-latest-post-image4.webp"/></a></div>
+                                        <div class="recipe-number"><span>4</span></div>
+                                        <div class="recipe-title"><a href="recipe-post-number-1.html">Simply Zucchini Muffins</a></div>
+                                    </div>
+                                    <div class="recipe-card">
+                                        <div class="recipe-image"><a href="recipe-post-number-1.html"><img src="images/content-latest-post-image5.webp"/></a></div>
+                                        <div class="recipe-number"><span>5</span></div>
+                                        <div class="recipe-title"><a href="recipe-post-number-1.html">Strawberry Cream Cheese Pie</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-item-container">
+                                    <div class="recipe-card">
+                                        <div class="recipe-image"><a href="recipe-post-number-1.html"><img src="images/content-latest-post-image6.jpg"/></a></div>
+                                        <div class="recipe-number"><span>6</span></div>
+                                        <div class="recipe-title"><a href="recipe-post-number-1.html">Zucchini Bread (Better than Ever!)</a></div>
+                                    </div>
+                                    <div class="recipe-card">
+                                        <div class="recipe-image"><a href="recipe-post-number-1.html"><img src="images/content-latest-post-image7.jpg"/></a></div>
+                                        <div class="recipe-number"><span>7</span></div>
+                                        <div class="recipe-title"><a href="recipe-post-number-1.html">Chewy Chocolate Chip Cookies</a></div>
+                                    </div>
+                                    <div class="recipe-card">
+                                        <div class="recipe-image"><a href="recipe-post-number-1.html"><img src="images/content-latest-post-image8.jpg"/></a></div>
+                                        <div class="recipe-number"><span>8</span></div>
+                                        <div class="recipe-title"><a href="recipe-post-number-1.html">Easy No-Knead Olive Bread</a></div>
+                                    </div>
+                                    <div class="recipe-card">
+                                        <div class="recipe-image"><a href="recipe-post-number-1.html"><img src="images/content-latest-post-image9.jpg"/></a></div>
+                                        <div class="recipe-number"><span>9</span></div>
+                                        <div class="recipe-title"><a href="recipe-post-number-1.html">15+ Mother’s Day Recipes</a></div>
+                                    </div>
+                                    <div class="recipe-card">
+                                        <div class="recipe-image"><a href="recipe-post-number-1.html"><img src="images/content-latest-post-image10.jpg"/></a></div>
+                                        <div class="recipe-number"><span>10</span></div>
+                                        <div class="recipe-title"><a href="recipe-post-number-1.html">Berries & Cream French Toast Casserole</a></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Phần TOP VIEWED POST -->
+            <div class="top-post-container">
+                <div class="top-post title">
+                    <div class="top-post section-label">Top viewed posts</div>
+                    <a href="recipe-index.html" class="view-all-link">View <span>more </span> posts <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="top-post recipe-card-container">
+                    <div id="carouselExampleIndicators-1" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators-1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators-1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="carousel-item-container">
+                                    <div class="recipe-card">
+                                        <div class="recipe-image"><a href="recipe-post-number-1.html"><img src="images/content-top-post-image1.webp"/></a></div>
+                                        <div class="recipe-number"><span>1</span></div>
+                                        <div class="recipe-title"><a href="recipe-post-number-1.html">Zucchini Bread (Better than Ever!)</a></div>
+                                    </div>
+                                    <div class="recipe-card">
+                                        <div class="recipe-image"><a href="recipe-post-number-1.html"><img src="images/content-top-post-image2.webp"/></a></div>
+                                        <div class="recipe-number"><span>2</span></div>
+                                        <div class="recipe-title"><a href="recipe-post-number-1.html">Chewy Chocolate Chip Cookies</a></div>
+                                    </div>
+                                    <div class="recipe-card">
+                                        <div class="recipe-image"><a href="recipe-post-number-1.html"><img src="images/content-top-post-image3.webp"/></a></div>
+                                        <div class="recipe-number"><span>3</span></div>
+                                        <div class="recipe-title"><a href="recipe-post-number-1.html">Easy No-Knead Olive Bread</a></div>
+                                    </div>
+                                    <div class="recipe-card">
+                                        <div class="recipe-image"><a href="recipe-post-number-1.html"><img src="images/content-top-post-image4.webp"/></a></div>
+                                        <div class="recipe-number"><span>4</span></div>
+                                        <div class="recipe-title"><a href="recipe-post-number-1.html">Brown Butter Berry Tea Cakes</a></div>
+                                    </div>
+                                    <div class="recipe-card">
+                                        <div class="recipe-image"><a href="recipe-post-number-1.html"><img src="images/content-top-post-image5.webp"/></a></div>
+                                        <div class="recipe-number"><span>5</span></div>
+                                        <div class="recipe-title"><a href="recipe-post-number-1.html">Berries & Cream French Toast Casserole</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-item-container">
+                                    <div class="recipe-card">
+                                        <div class="recipe-image"><a href="recipe-post-number-1.html"><img src="images/content-top-post-image6.webp"/></a></div>
+                                        <div class="recipe-number"><span>6</span></div>
+                                        <div class="recipe-title"><a href="recipe-post-number-1.html">My Favorite Carrot Cake Recipe</a></div>
+                                    </div>
+                                    <div class="recipe-card">
+                                        <div class="recipe-image"><a href="recipe-post-number-1.html"><img src="images/content-top-post-image7.jpg"/></a></div>
+                                        <div class="recipe-number"><span>7</span></div>
+                                        <div class="recipe-title"><a href="recipe-post-number-1.html">Chewy Oatmeal Chocolate Chip Cookies</a></div>
+                                    </div>
+                                    <div class="recipe-card">
+                                        <div class="recipe-image"><a href="recipe-post-number-1.html"><img src="images/content-top-post-image8.webp"/></a></div>
+                                        <div class="recipe-number"><span>8</span></div>
+                                        <div class="recipe-title"><a href="recipe-post-number-1.html">Homemade Artisan Bread (With or Without Dutch Oven)</a></div>
+                                    </div>
+                                    <div class="recipe-card">
+                                        <div class="recipe-image"><a href="recipe-post-number-1.html"><img src="images/content-top-post-image9.jpg"/></a></div>
+                                        <div class="recipe-number"><span>9</span></div>
+                                        <div class="recipe-title"><a href="recipe-post-number-1.html">Homemade Buttery Flaky Pie Crust</a></div>
+                                    </div>
+                                    <div class="recipe-card">
+                                        <div class="recipe-image"><a href="recipe-post-number-1.html"><img src="images/content-top-post-image10.jpg"/></a></div>
+                                        <div class="recipe-number"><span>10</span></div>
+                                        <div class="recipe-title"><a href="recipe-post-number-1.html">Easy Cinnamon Rolls From Scratch</a></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators-1" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators-1" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Phần BEST BAKING TIPS -->
+            <div class="baking-tip-container">
+                <div class="baking-tip title">
+                    <div class="baking-tip section-label">Best baking tips</div>
+                    <a href="baking-tips-list.html" class="view-all-link">View <span>more </span> baking tips <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="baking-tip tip-card-container">
+                    <div class="tip-card">
+                        <div class="tip-image"><a href="recipe-post-number-1.html"><img src="images/content-baking-tip-image1.webp"/></a></div>
+                        <div class="tip-number"><span>Baking tips</span></div>
+                        <div class="tip-title"><a href="recipe-post-number-1.html">Piping Tips 101 + Video</a></div>
+                        <div class="tip-summary">In this blog post, I teach and show you how to use my favorite 5 piping tips and supply you with my favorite go-to buttercream frosting. I break down all the complicated information so you can learn how to decorate cakes and cupcakes like a PRO!</div>
+                        <div class="read-the-post-link"><a href="recipe-post-number-1.html">Read <span>the</span> post</a></div>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-image"><a href="recipe-post-number-1.html"><img src="images/content-baking-tip-image2.webp"/></a></div>
+                        <div class="tip-number"><span>Baking tips</span></div>
+                        <div class="tip-title"><a href="recipe-post-number-1.html">Cake Pan Sizes & Conversions</a></div>
+                        <div class="tip-summary">Unless you have fully stocked kitchen with dozens of baking pans, chances are that you’ll run into a recipe where you don’t have the specific pan required. This post gives plenty of cake pan sizes and conversions so you can make adjustments!</div>
+                        <div class="read-the-post-link"><a href="recipe-post-number-1.html">Read <span>the</span> post</a></div>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-image"><a href="recipe-post-number-1.html"><img src="images/content-baking-tip-image3.webp"/></a></div>
+                        <div class="tip-number"><span>Baking tips</span></div>
+                        <div class="tip-title"><a href="recipe-post-number-1.html">Baking with Yeast Guide</a></div>
+                        <div class="tip-summary">This Baking with Yeast Guide answers common FAQ about baker’s yeast. Reference this guide whenever you work with baker’s yeast because I include practical answers to many common yeast & bread baking questions.</div>
+                        <div class="read-the-post-link"><a href="recipe-post-number-1.html">Read <span>the</span> post</a></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Phần MY COOKBOOKS -->
+            <div class="cookbook-container">
+                <div class="cookbook title">
+                    <div class="cookbook section-label">My cookbooks</div>
+                </div>
+                <div class="cookbook cookbook-card-container">
+                    <div class="cookbook-card orange-background">
+                        <div class="cookbook-image  orange-background"><a href="#"><img src="images/content-cookbook-image1.png"/></a></div>
+                        <div class="cookbook-title orange-background"><a href="#" class="orange-background">Emma’s Baking Addiction</a></div>
+                        <div class="cookbook-summary orange-background">This fully photographed baking cookbook is perfect for beginners and includes a broad range of 75+ recipes. You’ll find breakfast, muffins, breads, cupcakes, candy, cookies, cakes, pies, and more!</div>
+                        <div class="buy-now-link deep-orange-background"><a href="#" class="deep-orange-background">Buy now</a></div>
+                    </div>
+                    <div class="cookbook-card blue-background">
+                        <div class="cookbook-image blue-background"><a href="#"><img src="images/content-cookbook-image2.png"/></a></div>
+                        <div class="cookbook-title blue-background"><a href="#" class="blue-background">Emma’s Candy Addiction</a></div>
+                        <div class="cookbook-summary blue-background">Let me help demystify the world of candy making with these 75 photographed candy and candy inspired recipes. From marshmallows to toffee, each recipe is photographed with plenty of helpful tips to help guarantee success.</div>
+                        <div class="buy-now-link deep-blue-background"><a href="#" class="deep-blue-background">Buy now</a></div>
+                    </div>
+                    <div class="cookbook-card pink-background">
+                        <div class="cookbook-image pink-background"><a href="#"><img src="images/content-cookbook-image3.png"/></a></div>
+                        <div class="cookbook-title pink-background"><a href="#" class="pink-background">Emma’s Cookie Addiction</a></div>
+                        <div class="cookbook-summary pink-background">You’ll find 75+ photographed cookie recipes, most of which are exclusive to the cookbook and unavailable on this website. I also share dozens of success tips and my favorite cookie baking tools for you to enjoy.</div>
+                        <div class="buy-now-link deep-pink-background"><a href="#" class="deep-pink-background">Buy now</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- D) PHẦN FOOTER -->
+    <footer class="section footer">
+        <!-- Phần LOGO FOOTER -->
+        <div class="logo-footer-container">
+            <div class="container">
+                <div class="stripe-pattern">
+                    <div class="stripe-pink"></div>
+                    <div class="stripe-blue"></div>
+                    <div class="stripe-orange"></div>
+                </div>
+                <div class="logo-footer">
+                    <img src="images/footer-logo.png"/>
+                </div>
+                <div class="icon-footer">
+                    <img class="icon-footer-left" src="images/footer-icon1.png" width=20px/>
+                    <img class="icon-footer-left" src="images/footer-icon2.png" width=20px/>
+                    <img class="icon-footer-left" src="images/footer-icon3.png" width=20px/>
+                    <img class="icon-footer-left" src="images/footer-icon4.png" width=20px/>
+                    <img class="icon-footer-right" src="images/footer-icon5.png" width=20px/>
+                    <img class="icon-footer-right" src="images/footer-icon6.png" width=20px/>
+                    <img class="icon-footer-right" src="images/footer-icon7.png" width=20px/>
+                    <img class="icon-footer-right" src="images/footer-icon8.png" width=20px/>
+                </div>
+            </div>
+        </div>
+        <a id="signup-footer"></a>
+        <!-- Phần SIGNUP-FOOTER -->
+        <div class="signup-footer-background">
+            <div class="container">
+                <div class="signup-footer">
+                    <div class="signup-intro">Something sweet for your inbox: Sign up for FREE recipes!</div>
+                    <div class="signup-container">
+                        <form method="get" action="#" class="signup-bar">
+                            <input required type="text" placeholder="Your first name" name="first-name"/>
+                            <input required type="email" placeholder="Your email address" name="email-address"/>
+                            <button type="submit">Sign up!</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- Phần NAV FOOTER -->
+        <div class="nav-footer">
+            <div class="container">
+                <div class="nav-footer-left"><a href="#top"><i class="fa-solid fa-arrow-up"></i>Top</a></div>
+                <div class="nav-footer-left"><a href="start-here.html">Start here</a></div>
+                <div class="nav-footer-left"><a href="about-and-contact.html">About us</a></div>
+                <div class="nav-footer-left"><a href="privacy-policy.html">Privacy policy</a></div>
+                <div class="nav-footer-left"><a href="frequently-asked-questions.html">FAQ</a></div>
+                <div class="nav-footer-right">Emma's Baking Recipes &#169; 2022. Group project by second team.</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS phần Modal -->
+    <script type="text/javascript" src="js/modal.js"></script>
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- JS phần Sticky header -->
+    <script type="text/javascript" src="js/sticky-header.js"></script>
+
+</body>
+</html>

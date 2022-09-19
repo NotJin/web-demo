@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Peanut Butter Filled Brownie Cookies - Emma's Baking Recipes</title>
+    <link rel="icon" href="images/head-icon.png" type="image/ icon type"/>
+    <!-- File css phần layout + trang home -->
+    <link rel="stylesheet" href="css/layout.css"/>
+    <!-- File css phần content các trang khác -->
+    <link rel="stylesheet" href="css/other-pages-content.css"/>
+    <!-- File css phần Accordion -->
+    <link rel="stylesheet" href="css/accordion.css">
+
+    <!-- Lấy font google -->
+    <!-- font sans-serif -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+
+    <!-- font serif -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+
+    <!-- Lấy icon từ Font Awesome -->
+    <link rel="stylesheet" href="libs/fontawesome/css/all.css"/>
+</head>
+<body>
+    <a id="top"></a>
+
+    <!-- A) PHẦN HEADER -->
+    <header class="section header">
+        <div class="pink-header">
+            <div class="container">
+                <div class="pink-header-email">
+                    <!-- Trigger/Open the Modal -->
+                    <a id="myBtn">Receive newest recipes via email <i class="fa-solid fa-arrow-right"></i></a>
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div class="close">&times;</div>
+                            <div class="modal-name">SUBSCRIBE</div>
+                            <div class="modal-title">Baking Made Easy</div>
+                            <div class="modal-excerpt">This email series is a great place to start. I’ll walk you through a few of my most popular recipes and show you exactly why they work.</div>
+                            <div class="modal-form-container">
+                                <form method="get" action="#" class="signup-bar">
+                                    <input required type="text" placeholder="Your first name" name="first-name"/>
+                                    <input required type="email" placeholder="Your email address" name="email-address"/>
+                                    <button type="submit">Sign up!</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pink-header-nav">
+                    <ul>
+                        <li><a href="start-here.html">Start here</a></li>
+                        <li>&#183;</li>
+                        <li><a href="about-and-contact.html">About</a></li>
+                        <li>&#183;</li>
+                        <li><a href="baking-tips-list.html">Baking tip</a></li>
+                        <li>&#183;</li>
+                        <li><a href="cookbook-list.html">Cookbooks</a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="container">
+                <div class="site-logo">
+                    <a href="home.html"><img class="logo header" src="images/logo.png"/></a>
+                </div>
+                <div class="categories-nav">
+                    <ul class="menu-header-categories">
+                        <li class="menu-item"><a href="recipe-index.html"><img src="images/header-icon1-menu.png"/>All recipes</a></li>
+                        <li class="menu-item"><a href="bread-archives.html"><img src="images/header-icon2-bread.png"/>Bread</a></li>
+                        <li class="menu-item"><a href="cakes-archives.html"><img src="images/header-icon3-cakes.png"/>Cakes</a></li>
+                        <li class="menu-item"><a href="cookie-archives.html"><img src="images/header-icon4-cookies.png"/>Cookies</a></li>
+                        <li class="menu-item"><a href="video.html"><img src="images/header-icon5-videos.png"/>Videos</a></li>
+                    </ul>
+                </div>
+                <div class="header-search">
+                    <form method="get" action="#" class="search-form">
+                        <input required type="text" placeholder="Search...." name="search"/>
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="sticky-header" id="sticky-header">
+            <div class="container">
+                <div class="site-logo">
+                    <a href="home.html"><img class="logo header" src="images/logo.png"/></a>
+                </div>
+                <div class="categories-nav">
+                    <ul class="menu-header-categories">
+                        <li class="menu-item"><a href="recipe-index.html"><img src="images/header-icon1-menu.png"/>All recipes</a></li>
+                        <li class="menu-item"><a href="bread-archives.html"><img src="images/header-icon2-bread.png"/>Bread</a></li>
+                        <li class="menu-item"><a href="cakes-archives.html"><img src="images/header-icon3-cakes.png"/>Cakes</a></li>
+                        <li class="menu-item"><a href="cookie-archives.html"><img src="images/header-icon4-cookies.png"/>Cookies</a></li>
+                        <li class="menu-item"><a href="video.html"><img src="images/header-icon5-videos.png"/>Videos</a></li>
+                    </ul>
+                </div>
+                <div class="header-search">
+                    <form method="get" action="#" class="search-form">
+                        <input required type="text" placeholder="Search...." name="search"/>
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- B) PHẦN NAV -->
+    <nav class="section nav">
+        <div class="container">
+            <div class="browse">Browse by:</div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="recipe-index.html">Type <i class="fa-solid fa-angle-down"></i></a></button>
+                <div class="dropdown-content">
+                    <a href="recipe-index.html">Bread</a>
+                    <a href="recipe-index.html">Breakfirst</a>
+                    <a href="recipe-index.html">Brownies & Bars</a>
+                    <a href="recipe-index.html">Cake</a>
+                    <a href="recipe-index.html">Candy</a>
+                    <a href="recipe-index.html">Cheesecake</a>
+                    <a href="recipe-index.html">Cheesecake</a>
+                    <a href="recipe-index.html">Coockies</a>
+                    <a href="recipe-index.html">Coockies</a>
+                    <a href="recipe-index.html">Cupcakes</a>
+                    <a href="recipe-index.html">Desserts</a>
+                    <a href="recipe-index.html">Dinner & sides</a>
+                    <a href="recipe-index.html">Muffins</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="recipe-index.html">Dietary <i class="fa-solid fa-angle-down"></i></a></button>
+                <div class="dropdown-content">
+                    <a href="recipe-index.html">Dairy free</a>
+                    <a href="recipe-index.html">Egg free</a>
+                    <a href="recipe-index.html">Gluten free</a>
+                    <a href="recipe-index.html">Vegan</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="recipe-index.html">Ingredient <i class="fa-solid fa-angle-down"></i></a></button>
+                <div class="dropdown-content">
+                    <a href="recipe-index.html">Apples</a>
+                    <a href="recipe-index.html">Bananas</a>
+                    <a href="recipe-index.html">Blueberries</a>
+                    <a href="recipe-index.html">Chocolate</a>
+                    <a href="recipe-index.html">Cinnamon</a>
+                    <a href="recipe-index.html">Lemons</a>
+                    <a href="recipe-index.html">Peanut butter</a>
+                    <a href="recipe-index.html">Pumpkin</a>
+                    <a href="recipe-index.html">More...</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="recipe-index.html">Occasion <i class="fa-solid fa-angle-down"></i></a></button>
+                <div class="dropdown-content">
+                    <a href="recipe-index.html">Christmas</a>
+                    <a href="recipe-index.html">Easter</a>
+                    <a href="recipe-index.html">Halloween</a>
+                    <a href="recipe-index.html">St. Patrick's day</a>
+                    <a href="recipe-index.html">Thanksgiving</a>
+                    <a href="recipe-index.html">Valentine's day</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="recipe-index.html">Season <i class="fa-solid fa-angle-down"></i></a></button>
+                <div class="dropdown-content">
+                    <a href="recipe-index.html">Spring</a>
+                    <a href="recipe-index.html">Summer</a>
+                    <a href="recipe-index.html">Fall</a>
+                    <a href="recipe-index.html">Winter</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="recipe-index.html">Skill-level <i class="fa-solid fa-angle-down"></i></a></button>
+                <div class="dropdown-content">
+                    <a href="recipe-index.html">Beginner</a>
+                    <a href="recipe-index.html">Intermediate</a>
+                    <a href="recipe-index.html">Advanced</a>
+                </div>
+            </div>
+            <img class="logo-nav" src="images/nav-logo.png"/>
+        </div>
+    </nav>
+
+    <!-- C) PHẦN CONTENT -->
+    <section class="section main">
+        <div class="page-header">
+            <div class="page-header-container">
+                <div class="content-left-header gray-background">
+                    <div class="breadcrumbs-container">
+                        <div class="breadcrumbs gray-background">
+                            <span>
+                                <span class="gray-background">
+                                    <a href="home.html" class="gray-background">Home</a>
+                                    ·
+                                    <span class="gray-background">
+                                        <a href="cakes-archives.html" class="gray-background">Cookies</a>
+                                        .
+                                        <span class="breadcrumbs_last gray-background" aria-current="page">Peanut Butter Filled Brownie Cookies</span>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    <h1 class="page-title gray-background">Peanut Butter Filled Brownie Cookies</h1>
+                    <div class="the-post-date gray-background">
+                        Published by
+                        <a href="about-and-contact.html" class="gray-background">Emma</a>
+                        on
+                        <time class="entry-date published gray-background" datetime="2022-06-01T00:01:00-04:00">June 1, 2022</time>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container single-post-container" style="overflow: visible">
+            <div class="left-side">
+                <div class="entry-content">
+                    <div class="single-post-button-group">
+                        <div class="jump-to-recipe-button deep-blue-background">
+                            <a href="#tasty-recipes-jump-target" class="deep-blue-background">
+                                Jump
+                                <span class="italic-text deep-blue-background">to</span>
+                                Recipe
+                            </a>
+                        </div>
+                        <div class="jump-to-video-button deep-orange-background">
+                            <a href="#video-jump-target" class="deep-orange-background">
+                                Jump
+                                <span class="italic-text deep-orange-background">to</span>
+                                Video
+                            </a>
+                        </div>
+                    </div>
+                    <p>
+                        <em>These <strong>peanut butter filled brownie cookies</strong> are soft and fudge-like with a creamy peanut butter ripple swirled throughout. The brownie dough uses melted chocolate AND cocoa powder for extra chocolate flavor and the peanut butter filling requires just 2 ingredients. Warning: these are quite indulgent!</em>
+                    </p>
+                    <div class="block-image">
+                        <img src="images/recipe-post-number-1-image-1.jpg"/>
+                    </div>
+                    <p>
+                        Sometimes you just need a cookie. Last month it was my mission to bake some sort of stuffed peanut butter/chocolate cookie creation. I have recipes for both <a href="#">peanut butter swirl brownies</a> and <a href="#">peanut butter stuffed brownies</a> (and pb cup stuffed chocolate cookies in <a href="cookbook-list.html">my cookbook</a>) and questioned if this was really even necessary…
+                    </p>
+                    <p>
+                        But then I came to my senses because (hello!?) a cookie is <strong>always necessary</strong>. The test batches garnered rave reviews, so I knew this recipe had to be published ASAP.
+                    </p>
+                    <div class="gray-divider-container">
+                        <div class="stripe-gray"></div>
+                    </div>
+                    <h2>These Peanut Butter Filled Brownie Cookies Are:</h2>
+                    <ul>
+                        <li>Sweet and chewy like a brownie</li>
+                        <li>Shiny and crackly on top</li>
+                        <li>Unapologetically rich and indulgent</li>
+                        <li>Filled and marbled with a soft peanut butter filling like the inside of peanut butter balls and peanut butter Easter eggs (so good!!)</li>
+                    </ul>
+                    <div class="block-image">
+                        <img src="images/recipe-post-number-1-image-2.webp"/>
+                    </div>
+                    <p>
+                        <em>The full printable recipe is below, but let me point out some things to know before you get started.</em>
+                    </p>
+                    <h2>Peanut Butter Filling</h2>
+                    <p>
+                        The first thing you’re going to do is make the peanut butter filling using equal parts confectioners’ sugar and peanut butter. Stir them together (no need for a mixer) until combined and then roll into teaspoon-size balls as best you can. Like the filling from these <a href="#">cream cheese red velvet cookies</a> (what a mouthful), the peanut butter filling must be extremely cold. Chill the peanut butter filling <strong>in the freezer</strong> for at least 1 hour as you make and chill the cookie dough.
+                    </p>
+                    <ol>
+                        <li><strong>Can I use natural peanut butter?</strong> Yes. It doesn’t spread as much in the oven, so the cookies with natural peanut butter were a bit more lumpy, but still tasted great! I used creamy unsalted natural peanut butter that had been in the fridge, and it took a little bit more arm muscle and time to stir the confectioners’ sugar into it (compared with the conventional peanut butter), but it did smooth out—just keep at it.</li>
+                        <li><strong>Can I use a peanut butter alternative?</strong> Yes. For nut-free alternatives, you can use Biscoff cookie butter or sunflower seed butter spread. My team and I have not tested this recipe with almond butter, but I don’t see any issue using that instead.</li>
+                    </ol>
+                    <div class="block-gallery">
+                        <img src="images/recipe-post-number-1-image-3.webp"/>
+                        <img src="images/recipe-post-number-1-image-4.webp"/>
+                    </div>
+                    <h2>Brownie Cookie Dough Ingredients</h2>
+                    <p>
+                        Now that the peanut butter balls are in the freezer, you can start the brownie cookie dough. Have you ever made my <a href="#">brownie cookies</a> before? They’re a hit whenever I make them and you might love them even more marbled with peanut butter. A few key ingredients you need include cocoa powder, brown & white sugars, eggs, room temperature butter, flour, espresso powder, and chocolate.
+                    </p>
+                    <p>
+                        Espresso powder is optional for a deeper chocolate flavor. If you don’t have it, just skip it.
+                    </p>
+                    <div class="block-image">
+                        <img src="images/recipe-post-number-1-image-5.webp"/>
+                    </div>
+                    <h2>Success Tip: Best Chocolate to Use</h2>
+                    <p>
+                        Since most of the cookie’s chocolate flavor comes from melted chocolate, do not cut corners. Use pure chocolate baking bars such as Ghirardelli (not affiliated, just love their chocolate). You can find them right next to the chocolate chips in the baking aisle. They’re typically sold in 4 ounce bars and you need 8 ounces for this recipe.
+                    </p>
+                    <ul>
+                        <li>I use and recommend semi-sweet chocolate, but you can use bittersweet or unsweetened chocolate for a much darker flavor. In the pictured cookies, I used 4 ounces semi-sweet and 4 ounces bittersweet.
+                        </li>
+                    </ul>
+                    <div class="gray-divider-container">
+                        <div class="stripe-gray"></div>
+                    </div>
+                    <p>
+                        <strong>The cookie dough is practically brownie batter</strong>, so it needs to chill in the refrigerator for 1 hour before you can shape it with the peanut butter filling. Very sticky before chilling:
+                    </p>
+                    <div class="block-image">
+                        <img src="images/recipe-post-number-1-image-6.webp"/>
+                    </div>
+                    <p>
+                        <strong>Look how much it solidifies after 1 hour in the refrigerator.</strong> This is exactly what you want:
+                    </p>
+                    <div class="block-gallery">
+                        <img src="images/recipe-post-number-1-image-7.webp"/>
+                        <img src="images/recipe-post-number-1-image-8.webp"/>
+                    </div>
+                    <h2>Let’s Shape These Peanut Butter Filled Brownie Cookies</h2>
+                    <p>Using a Tablespoon measuring spoon, scoop out a heaping mound of the brownie cookie dough. It will be pretty hard after chilling, but will soften up in your hands as you roll it. <em>(I don’t recommend using a cookie scoop for this dough because the dough is too hard and sticky. I tried it and my cookie scoop went on strike.)</em> Now the exact marbling/shaping process:</p>
+                    <div class="block-image">
+                        <img src="images/recipe-post-number-1-image-9.webp"/>
+                    </div>
+                    <ol>
+                        <li>Roll the dough in your hands to make a ball and then press your thumb into the ball as if you were making a thumbprint cookie.</li>
+                        <li>Roll the dough in your hands to make a ball and then press your thumb into the ball as if you were making a thumbprint cookie.</li>
+                        <li>Smush (yes, that’s the technical term) the piece of brownie cookie dough you’d taken away back on top of the peanut butter filling.</li>
+                        <li>Mold it all together as you reroll it into a ball. It will look a little marbled.</li>
+                    </ol>
+                    <p>
+                        <strong>YOUR HANDS WILL GET MESSY in this process, fair warning.</strong>
+                    </p>
+                    <p>
+                        Every cookie will look different, which only adds to their alluring charm. And by the way, you could totally use these cookies for <a href="#">cookie ice cream sandwiches</a>!
+                    </p>
+                    <div class="block-image">
+                        <img src="images/recipe-post-number-1-image-10.webp"/>
+                    </div>
+                    <div class="block-image">
+                        <img src="images/recipe-post-number-1-image-11.webp"/>
+                    </div>
+                    <div class="gray-divider-container">
+                        <div class="stripe-gray"></div>
+                    </div>
+                    <h2>3 Final Success Tips</h2>
+                    <ol>
+                        <li><strong>Don’t overthink the shaping step.</strong> The marbling/swirling doesn’t have to be perfect. In fact, it’s fun that every single cookie looks different!</li>
+                        <li><strong>Shape only a few at a time.</strong> The peanut butter filling softens up extremely quickly after you take it out of the freezer, and quickly becomes softer than the brownie cookie dough. I recommend taking about 6 peanut butter balls out of the freezer at a time, leaving the rest in the freezer while you’re shaping the first bunch.</li>
+                        <li><strong>Clean-ish hands.</strong> Wipe or wash your hands clean after you shape a few cookies. Once your hands are really messy, the dough becomes unworkable. I usually shape 6, freshen up my hands, shape another 6, etc.</li>
+                    </ol>
+
+                    <span id="tasty-recipes-jump-target"></span>
+                    <div class="tasty-recipes">
+                        <header class="tasty-recipes-entry-header">
+                            <div class="tasty-recipes-image">
+                                <img src="images/recipe-post-number-1-image-13.jpg"/>
+                            </div>
+                            <div class="tasty-recipes-header-content">
+                                <h2 class="tasty-recipes-title">Peanut Butter Filled Brownie Cookies</h2>
+                                <div class="tasty-recipes-details">
+                                    <ul>
+                                        <li class="author">
+                                            <span class="tasty-recipes-label">Author:</span>
+                                            <a href="about-and-contact.html" class="tasty-recipes-author-name">Emma</a>
+                                        </li>
+                                        <li class="prep-time">
+                                            <span class="tasty-recipes-label">Prep Time:</span>
+                                            <span class="tasty-recipes-prep-time">1 hours, 40 minutes (include chilling)</span>
+                                        </li>
+                                        <li class="cook-time">
+                                            <span class="tasty-recipes-label">Cook Time:</span>
+                                            <span class="tasty-recipes-cook-time">13 minutes</span>
+                                        </li>
+                                        <li class="total-time">
+                                            <span class="tasty-recipes-label">Total Time:</span>
+                                            <span class="tasty-recipes-total-time">2 hours</span>
+                                        </li>
+                                        <li class="yield">
+                                            <span class="tasty-recipes-label">Yield:</span>
+                                            <span class="tasty-recipes-yield">24 cookies</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </header>
+
+                        <div class="tasty-recipes-entry-content">
+                            <div class="tasty-recipes-description">
+                                <h3>Description</h3>
+                                <p>Take rich and chewy brownie cookies to the next level with a creamy peanut butter swirl! Both the peanut butter filling and cookie dough must chill before shaping. Review shaping success tips above the recipe.
+                                </p>
+                            </div>
+
+                            <div class="tasty-recipes-ingredients">
+                                <div class="tasty-recipes-ingredients-header">
+                                    <h3>Ingredients</h3>
+                                </div>
+                                <div class="tasty-recipes-ingredients-body">
+                                    <h4>Peanut Butter Filling</h4>
+                                    <ul>
+                                        <li><label class="checkbox-content"><input type="checkbox" name="ingredients" class="checkbox"/><span>1/2 cup (125g) <strong>creamy peanut butter</strong></span></label></li>
+                                        <li><label class="checkbox-content"><input type="checkbox" name="ingredients" class="checkbox"/><span>1/2 cup (60g) <strong>confectioners’ sugar</strong></span></label></li>
+                                    </ul>
+                                    <h4>Cookie Dough</h4>
+                                    <ul>
+                                        <li><label class="checkbox-content"><input type="checkbox" name="ingredients" class="checkbox"/><span>8 ounces (226g) <strong>semi-sweet chocolate</strong>, coarsely chopped (2 standard 4-ounce bars of baking chocolate)</span></label></li>
+                                        <li><label class="checkbox-content"><input type="checkbox" name="ingredients" class="checkbox"/><span>3/4 cup (94g)<strong> all-purpose flour</strong></span></label></li>
+                                        <li><label class="checkbox-content"><input type="checkbox" name="ingredients" class="checkbox"/><span>1/4 cup (21g) natural unsweetened or dutch-process <strong>cocoa powder</strong></span></label></li>
+                                        <li><label class="checkbox-content"><input type="checkbox" name="ingredients" class="checkbox"/><span>1 teaspoon <strong>espresso powder</strong></span></label></li>
+                                        <li><label class="checkbox-content"><input type="checkbox" name="ingredients" class="checkbox"/><span>1 teaspoon <strong>baking powder</strong></span></label></li>
+                                        <li><label class="checkbox-content"><input type="checkbox" name="ingredients" class="checkbox"/><span>1/4 teaspoon <strong>salt</strong></span></label></li>
+                                        <li><label class="checkbox-content"><input type="checkbox" name="ingredients" class="checkbox"/><span>1/3 cup (5 Tablespoons; 72g) <strong>unsalted butter</strong>, softened to room temperature</span></label></li>
+                                        <li><label class="checkbox-content"><input type="checkbox" name="ingredients" class="checkbox"/><span>3/4 cup (150g) packed light or dark <strong>brown sugar</strong></span></label></li>
+                                        <li><label class="checkbox-content"><input type="checkbox" name="ingredients" class="checkbox"/><span>1/4 cup (50g) <strong>granulated sugar</strong></span></label></li>
+                                        <li><label class="checkbox-content"><input type="checkbox" name="ingredients" class="checkbox"/><span>2 large <strong>eggs</strong>, at room temperature</span></label></li>
+                                        <li><label class="checkbox-content"><input type="checkbox" name="ingredients" class="checkbox"/><span>1 teaspoon <strong>pure vanilla extract</strong></span></label></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tasty-recipes-instructions">
+                                <div class="tasty-recipes-instructions-header">
+                                    <h3>Instructions</h3>
+                                </div>
+                                <div class="tasty-recipes-instructions-body">
+                                    <ol>
+                                        <li><strong>Make the peanut butter filling:</strong> In a small bowl, mix the peanut butter and confectioners’ sugar together until combined and smooth. You can just use a spoon for this. Mixture is thick, yet soft. With a teaspoon, scoop out a spoonful of peanut butter mixture (about 6g), and roll into a ball. Place on a parchment paper-lined baking sheet, plate, or tray. Repeat with remaining mixture until you have 24 peanut butter balls. Loosely cover and freeze for at least 1 hour and up to 1 day. (I usually just freeze them for a little over 1 hour, which is the amount of time it takes to make and chill the brownie cookie dough.)</li>
+                                        <li><strong>Make the brownie cookie dough:</strong> Melt the chocolate in a double boiler or use the microwave. Microwave in 20-second increments, stirring after each until completely melted. Set aside to slightly cool.</li>
+                                        <li>Meanwhile, whisk the flour, cocoa powder, espresso powder, baking powder, and salt together. Set aside. In a large bowl using a handheld or stand mixer fitted with a paddle attachment, beat the butter, brown sugar, and granulated sugar together on medium-high speed until smooth and creamy, about 2 minutes. Add the eggs and vanilla extract, and beat on high speed for 2 full minutes. Scrape down the sides and up the bottom of the bowl, then beat on high for 1 more minute. Pour in the slightly cooled melted chocolate and mix on medium-high speed for 2 full minutes. Pour the dry ingredients into the wet ingredients and beat on low speed until combined. </li>
+                                        <li>Cover and chill the dough in the refrigerator for 1 hour. If chilling for longer, allow the cookie dough to sit at room temperature for 10-15 minutes before rolling and shaping in step 6.</li>
+                                        <li>After chilling, preheat oven to 350°F (177°C). Line large baking sheets with parchment paper or silicone baking mats. </li>
+                                        <li><strong>Shape the cookies:</strong> The peanut butter filling softens up extremely quickly after you take it out of the freezer. I recommend taking about 6 peanut butter balls out of the freezer at a time, leaving the rest in the freezer while you’re shaping the first bunch. Using a sturdy tablespoon, scoop out a heaping spoonful of the cookie dough and roll into a ball, about 1.5 Tablespoons/30g/1 ounce of dough each. The dough will be quite stiff. Make an indentation with your thumb, and place a frozen peanut butter ball in the indentation. Pinch off a piece of the brownie cookie dough and press it on top of the peanut butter filling, and then roll the whole thing together into a smooth ball. Feel free to pull off pieces of brownie dough to expose more peanut butter and then re-roll together; peanut butter can also be hidden inside the cookie dough if you don’t want a marbled look. Repeat with remaining cookie dough and peanut butter balls. (Warning: your hands get messy in this step!)</li>
+                                        <li>Place dough balls 3 inches apart on the baking sheets and bake for 12-13 minutes or until the edges appear set. The centers will be quite soft, but will set up as the cookies cool.</li>
+                                        <li>Remove from the oven and allow cookies to cool on the baking sheet for 10 minutes before transferring to a wire rack to cool completely.</li>
+                                        <li>Cookies stay fresh covered at room temperature for up to 1 week.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <span id="video-jump-target"></span>
+                            <div class="tasty-recipes-video-embed">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/QxmVguoy3Po" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="tasty-recipes-notes">
+                                <div class="tasty-recipes-notes-header">
+                                    <h3>Notes</h3>
+                                </div>
+                                <div class="tasty-recipes-notes-body">
+                                    <ol>
+                                        <li><strong>Make Ahead Instructions:</strong> Baked cookies freeze well for up to 3 months. Unbaked cookie dough balls freeze well for up to 3 months. Bake frozen cookie dough balls for an extra minute, no need to thaw. Cookies won’t spread as much if dough balls were frozen, so about halfway through bake-time, gently press down on the baking cookies with a spoon to help get them to spread.</li>
+                                        <li><strong>Peanut Butter:</strong> At the time of publication, there is a recall on Jif peanut butters. Please consider researching the recall information and use another brand of peanut butter in this recipe. We tested it with Skippy Creamy, Justin’s Natural Creamy, and Wegmans brand Natural Creamy. If using natural and the oil has separated to the top of the jar, make sure you stir it well before measuring. Room temperature peanut butter is easiest to mix. <strong>I do not</strong> recommend crunchy peanut butter because it doesn’t mix very easily with the confectioners’ sugar.</li>
+                                        <li><strong>Peanut Butter Alternatives:</strong> For a nut-free alternative, you can use Biscoff cookie butter or sunflower seed butter spread. My team and I have not tested this recipe with almond butter, but I don’t see any issue using that instead!</li>
+                                        <li><strong>Chocolate:</strong> Use pure chocolate baking bars. You can find them right next to the chocolate chips in the baking aisle. They are sold in 4 ounce bars, so you’ll need 2. I use and recommend semi-sweet chocolate, but you can use bittersweet or unsweetened chocolate (or a combination of any) for a darker chocolate flavor.</li>
+                                        <li><trong>Espresso Powder:</trong> Espresso powder deepens the chocolate flavor. You can skip it or use 2 teaspoons of instant coffee powder instead.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-side">
+                <aside class="widget-area">
+                    <section class="widget">
+                        <div class="callout-container-boder">
+                            <div class="callout-container">
+                                <div class="callout-title">Emma Green</div>
+                                <div class="callout-content">
+                                    <p>Emma Green is a professional food photographer, cookbook author, and baker. Her kitchen-tested recipes and thorough step-by-step tutorials give readers the knowledge and confidence to bake from scratch. Emma has been featured on Good Morning America, HuffPost, Taste of Home, People and more.</p>
+                                    <p><strong><a href="about-and-contact.html">Read more about Emma</a></strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="widget">
+                        <form method="get" action="#" class="search-form">
+                            <input required type="text" placeholder="Search...." name="search"/>
+                            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                    </section>
+                    <section class="widget">
+                        <div class="related-posts">
+                            <h3 class="widget-title">Related Recipes</h3>
+                            <ul class="related-posts-list">
+                                <li>
+                                    <div class="related-post-image">
+                                        <a href="#"><img src="images/recipe-post-number-1-related-post-image-1.jpg"/></a>
+                                    </div>
+                                    <div class="related-post-content">
+                                        <div class="related-post-category">
+                                            <a href="cookie-archives.html">Cookies</a>
+                                        </div>
+                                        <a href="#">Peanut Butter Snickers Cookies</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="related-post-image">
+                                        <a href="#"><img src="images/recipe-post-number-1-related-post-image-2.jpg"/></a>
+                                    </div>
+                                    <div class="related-post-content">
+                                        <div class="related-post-category">
+                                            <a href="cookie-archives.html">Cookies</a>
+                                        </div>
+                                        <a href="#">Crispy Peanut Butter Cookies</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="related-post-image">
+                                        <a href="#"><img src="images/recipe-post-number-1-related-post-image-3.jpg"/></a>
+                                    </div>
+                                    <div class="related-post-content">
+                                        <div class="related-post-category">
+                                            <a href="cookie-archives.html">Cookies</a>
+                                        </div>
+                                        <a href="#">Soft Peanut Butter Lovers’ Cookies</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="related-post-image">
+                                        <a href="#"><img src="images/recipe-post-number-1-related-post-image-4.jpg"/></a>
+                                    </div>
+                                    <div class="related-post-content">
+                                        <div class="related-post-category">
+                                            <a href="cookie-archives.html">Cookies</a>
+                                        </div>
+                                        <a href="#">Peanut Butter Cup Cookies</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- D) PHẦN FOOTER -->
+    <footer class="section footer">
+        <!-- Phần LOGO FOOTER -->
+        <div class="logo-footer-container">
+            <div class="container">
+                <div class="stripe-pattern">
+                    <div class="stripe-pink"></div>
+                    <div class="stripe-blue"></div>
+                    <div class="stripe-orange"></div>
+                </div>
+                <div class="logo-footer">
+                    <img src="images/footer-logo.png"/>
+                </div>
+                <div class="icon-footer">
+                    <img class="icon-footer-left" src="images/footer-icon1.png" width=20px/>
+                    <img class="icon-footer-left" src="images/footer-icon2.png" width=20px/>
+                    <img class="icon-footer-left" src="images/footer-icon3.png" width=20px/>
+                    <img class="icon-footer-left" src="images/footer-icon4.png" width=20px/>
+                    <img class="icon-footer-right" src="images/footer-icon5.png" width=20px/>
+                    <img class="icon-footer-right" src="images/footer-icon6.png" width=20px/>
+                    <img class="icon-footer-right" src="images/footer-icon7.png" width=20px/>
+                    <img class="icon-footer-right" src="images/footer-icon8.png" width=20px/>
+                </div>
+            </div>
+        </div>
+        <a id="signup-footer"></a>
+        <!-- Phần SIGNUP-FOOTER -->
+        <div class="signup-footer-background">
+            <div class="container">
+                <div class="signup-footer">
+                    <div class="signup-intro">Something sweet for your inbox: Sign up for FREE recipes!</div>
+                    <div class="signup-container">
+                        <form method="get" action="#" class="signup-bar">
+                            <input required type="text" placeholder="Your first name" name="first-name"/>
+                            <input required type="email" placeholder="Your email address" name="email-address"/>
+                            <button type="submit">Sign up!</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Phần NAV FOOTER -->
+        <div class="nav-footer">
+            <div class="container">
+                <div class="nav-footer-left"><a href="#top"><i class="fa-solid fa-arrow-up"></i>Top</a></div>
+                <div class="nav-footer-left"><a href="start-here.html">Start here</a></div>
+                <div class="nav-footer-left"><a href="about-and-contact.html">About us</a></div>
+                <div class="nav-footer-left"><a href="privacy-policy.html">Privacy policy</a></div>
+                <div class="nav-footer-left"><a href="frequently-asked-questions.html">FAQ</a></div>
+                <div class="nav-footer-right">Emma's Baking Recipes &#169; 2022. Group project by second team.</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- PHẦN JS CHO ACCODION -->
+    <script type="text/javascript" src="js/arrcodion.js"></script>
+    <!-- PHẦN JS CHO CHECK-BOX -->
+<!--    <script type="text/javascript">-->
+<!--        var checkboxArray = document.querySelectorAll(".checkbox");-->
+<!--        var checkboxContentArray = document.querySelectorAll(".checkbox-content");-->
+<!--        document.querySelectorAll(".checkbox").forEach(function (i) {-->
+<!--            i.addEventListener('click', function (e) {-->
+<!--                const checkboxIndex = [...checkboxArray].indexOf(e.target);-->
+<!--                checkboxContentArray[checkboxIndex].classList.toggle("cross-word");-->
+<!--            })-->
+<!--        });-->
+<!--    </script>-->
+    <!-- JS phần Modal -->
+    <script type="text/javascript" src="js/modal.js"></script>
+    <!-- JS phần Sticky header -->
+    <script type="text/javascript" src="js/sticky-header.js"></script>
+
+</body>
+</html>
